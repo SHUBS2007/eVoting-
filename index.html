@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eVoting</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font style for all text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font style for h1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <button>
+                <span class="box">
+                    About
+                </span>
+            </button>
+            <button>
+                <span class="box">
+                    Contact
+                </span>
+            </button>
+            <!-- LOGIN BTN -->
+            <button class="lr">login </button>
+            <!-- light&dark mode -->
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <img src="icon/VOTE PNG.png" alt="">
+        </section>
+        <aside>
+            <h2 class="text">Be a part of decision</h2>
+            <h1 class="text">Vote Today</h1>
+            <section class="section2">
+                <button id="REGISTER" class="lr">REGISTER </button>
+            </section>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+
+</html>
